@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Gray900}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="50">
+        <Label Text="Sobre Nós"
+            FontFamily="Domine-SemiBold"
+               FontSize="50"
+               TextColor="Aquamarine"
+               HorizontalTextAlignment="Center"/>
+        <Frame Padding="10">
+            
+            <VerticalStackLayout
+                Spacing="10"
+                Padding="10">
+                <Grid RowDefinitions="Auto, Auto, Auto, Auto,Auto, Auto, Auto, Auto">
+
+                    <Label Grid.Row="0" 
+                           Text="Nome dos Desenvolvedores:" FontFamily="Domine-Bold" FontSize="25"/>
+                    <Label Grid.Row="1"                           
+                           Text="Murilo, Gustavo e Januário." FontFamily="Domine-Regular" FontSize="15"/>
+                    <Label Grid.Row="2" 
+                           Text="História:" FontFamily="Domine-Bold" FontSize="25"
+                           LineHeight="2.0"/>
+                    <Label Grid.Row="3"                           
+                           Text="Fundada em 2025, nossa empresa nasceu com o objetivo de oferecer soluções tecnológicas acessíveis para pequenos comércios" FontFamily="Domine-Regular" FontSize="15"/>
+                    <Label Grid.Row="4" 
+                            Text="Valores:" FontFamily="Domine-Bold" FontSize="25"
+                           LineHeight="2.0"/>
+                    <Label Grid.Row="5"                           
+                            Text="Honestidade, Qualidade e Criatividade." FontFamily="Domine-Regular" FontSize="15"/>
+                    <Label Grid.Row="6" 
+                            Text="Produtos:" FontFamily="Domine-Bold" FontSize="25"
+                           LineHeight="2.0"/>
+                    <Label Grid.Row="7"                           
+                            Text="Oferecemos soluções completas em desenvolvimento de sistemas e suporte técnico." FontFamily="Domine-Regular" FontSize="15"/>
+                </Grid>
+             </VerticalStackLayout>
+
+        </Frame>
+
+    </VerticalStackLayout>
+
+       
+
+</ContentPage>

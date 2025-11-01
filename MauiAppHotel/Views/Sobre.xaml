@@ -42,15 +42,13 @@
                             Text="Oferecemos soluções completas em desenvolvimento de sistemas e suporte técnico." FontFamily="Domine-Regular" FontSize="15"/>
                 </Grid>
 
+
                 <Button Text="Voltar" Clicked="Button_Clicked_3"
                         Padding="10"
                         Margin="10"/>
-             </VerticalStackLayout>
+            </VerticalStackLayout>
 
         </Frame>
 
     </VerticalStackLayout>
-
-       
-
 </ContentPage>

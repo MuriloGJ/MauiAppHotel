@@ -45,7 +45,7 @@
                 <Button Text="Voltar" Clicked="Button_Clicked_3"
                         Padding="10"
                         Margin="10"/>
-            </VerticalStackLayout>
+             </VerticalStackLayout>
 
         </Frame>
 

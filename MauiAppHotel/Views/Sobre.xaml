@@ -3,8 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotel.Views.Sobre"
              Title="Sobre"
-             NavigationPage.HasNavigationBar="False"
-             BackgroundColor="{StaticResource Gray900}">
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Background>
+    <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="CadetBlue" Offset="0.1"/>
+            <GradientStop Color="DarkSlateGray" Offset="0.5"/>
+            <GradientStop Color="CadetBlue" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand"
                          Padding="10"

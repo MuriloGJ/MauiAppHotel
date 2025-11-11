@@ -51,18 +51,29 @@
 
                 </Grid>
 
-                <Label Text="Escolha sua Suíte"
-                       FontFamily="Domine-SemiBold"/>
-                <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação"
-                        FontFamily="Domine-SemiBold"
-                       ItemDisplayBinding = "{Binding Descricao}"/>
+                <Frame Padding="10"
+                       Margin="10"
+                       BackgroundColor="{StaticResource Gray900}">
+                    <VerticalStackLayout>
+                        <Label Text="Escolha sua Suíte"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               FontFamily="Domine-SemiBold"/>
+                        <Picker x:Name="pck_quarto"
+                                Title="Selecione sua Acomodação"
+                                FontFamily="Domine-SemiBold"
+                                ItemDisplayBinding = "{Binding Descricao}"/>
+                    </VerticalStackLayout>
+                </Frame>
 
                 <Frame Padding="10"
-                       Margin="10">
-                    <VerticalStackLayout>
-                        <Label Text="Período da Estadia"/>
-                        <HorizontalStackLayout>
+                       Margin="10"
+                       BackgroundColor="{StaticResource Gray900}">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Período da Estadia"
+                               TextTransform="Uppercase"
+                               FontSize="20"/>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
 
                             <Label  Text="Check-in:"/>
                             <DatePicker x:Name="dtpck_checkin"
@@ -70,7 +81,7 @@
                                         Format="dd/MM/yyyy"/>
 
                         </HorizontalStackLayout>
-                        <HorizontalStackLayout>
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
 
                             <Label  Text="Check-out:"/>
                             <DatePicker x:Name="dtpck_checkout"
